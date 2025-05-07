@@ -122,6 +122,54 @@
                 align-items: flex-start;
                 gap: 10px;
             }
+        .contact-section {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-section input, .contact-section textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-section input:focus, .contact-section textarea:focus {
+            outline: none;
+            border-color: #578db3;
+        }
+
+        .contact-section button {
+            padding: 12px;
+            background-color: #578db3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section button:hover {
+            background-color: #3e6f91;
         }
     </style>
 </head>
@@ -169,6 +217,16 @@
                 <img src="your-photo.jpg" alt="Jun-Ha Kim" />
             </div>
         </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Name *" required>
+            <input type="email" placeholder="Email Address *" required>
+            <textarea placeholder="Message *" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
 </body>
